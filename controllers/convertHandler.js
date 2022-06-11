@@ -20,9 +20,9 @@ function ConvertHandler() {
       result = result[0]
 
       if (result !== 'L')
-        result.toLowerCase()
+        result = result.toLowerCase()
       else
-        result.toUpperCase()
+        result = result.toUpperCase()
 
       return ['gal', 'L', 'mi', 'km', 'lbs', 'kg'].includes(result) ? result : 'invalid unit'
     }
