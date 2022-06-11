@@ -139,7 +139,7 @@ suite('Unit Tests', () => {
         )
     })
 
-    // #11
+    // #16
     test('kg to lbs', () => {
         assert.strictEqual(
             convertHandler.getReturnUnit('kg'),
