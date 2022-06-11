@@ -95,7 +95,7 @@ function ConvertHandler() {
         result = initNum / lbsToKg
     }
 
-    return Number.parseFloat(result.toFixed(5))
+    return result.toFixed(5)
   }
 
   this.getString = (initNum, initUnit, returnNum, returnUnit) => {
