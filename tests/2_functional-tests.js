@@ -13,8 +13,7 @@ suite('Functional Tests', () => {
             .get('/api/convert?input=10L')
             .end((err, res) => {
                 assert.strictEqual(res.status, 200)
-                assert.strictEqual(res.body.returnUnit, 'gal')
-                assert.strictEqual(res.body.returnNum, 2.64172)
+                assert.strictEqual(res.body.string, '10 liters converts to 2.64172 gallons')
                 done()
             })
     })
